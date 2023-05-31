@@ -1,0 +1,7 @@
+SELECT osoby.id,osoby.imie,osoby.nazwisko,osoby.rok_urodzenia,osoby.zdjecie FROM osoby LIMIT 30;
+
+SELECT osoby.imie,osoby.nazwisko,osoby.rok_urodzenia,osoby.opis,osoby.zdjecie FROM osoby JOIN hobby ON Hobby_id=hobby.id WHERE osoby.id=10;
+
+SELECT AVG(rok_urodzenia), MIN(rok_urodzenia), MAX(rok_urodzenia) FROM osoby;
+
+UPDATE osoby SET opis="hobby horsing" WHERE Hobby_id = 4;
